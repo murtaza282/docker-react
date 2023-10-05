@@ -7,4 +7,3 @@ services:
 
   script: 
     - docker run -e CI=true murtaza/docker-react npm run test
-    
