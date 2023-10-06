@@ -7,3 +7,16 @@ before_install:
 
 script: 
     - docker run -e CI=true murtaza/docker-react npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "ap-southeast-1"
+  app: "docker-react-beanstalk-app"
+  env: "Docker-react-beanstalk-app-env"
+  bucket_name: "elasticbeanstalk-ap-southeast-1-119991016346"
+  bucket_path: "docker-react-beanstalk-app"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: "$AWS_SECRET_KEY"
+  
