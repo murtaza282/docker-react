@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hi Murtaza you have writen React Application you are genius. Well done
+          Hi Murtaza you have writen React Application you are genius. feature branch changed!
         </p>
         <a
           className="App-link"
